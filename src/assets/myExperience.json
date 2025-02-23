@@ -1,0 +1,45 @@
+{
+    "experience": [
+      {
+        "job_title": "Städare",
+        "company": "Snällstäd",
+        "location": "Åre",
+        "start_date": "Jul 2022",
+        "end_date": "Aug 2024",
+        "description": "Ansvarade för städning och underhåll av olika typer av lokaler. Utförde både daglig rengöring och djupstädning för att upprätthålla en hygienisk miljö."
+      },
+      {
+        "job_title": "Nattjobb, Hotell",
+        "company": "Copperhill Mountain Lodge",
+        "location": "Åre",
+        "start_date": "Maj 2024",
+        "end_date": "Jul 2024",
+        "description": "Skötsel och säkerhetsinspektioner av hotellets allmänna utrymmen under nattetid."
+      },
+      {
+        "job_title": "Lokalvårdare",
+        "company": "Åre Kommun",
+        "location": "Åre",
+        "start_date": "Jun 2024",
+        "end_date": "Aug 2024",
+        "description": "Ansvarade för lokalvård och underhåll av fastigheter."
+      },
+      {
+        "job_title": "Fastighetsskötare & Parkarbetare",
+        "company": "Åre Kommun",
+        "location": "Åre",
+        "start_date": "Apr 2022",
+        "end_date": "Jul 2022",
+        "description": "Underhåll av grönområden och fastigheter med uppgifter som trädgårdsskötsel och reparation."
+      },
+      {
+        "job_title": "Byggarbetare",
+        "company": "Husfabriken",
+        "location": "Åre",
+        "start_date": "Jan 2021",
+        "end_date": "Apr 2021",
+        "description": "Deltog i byggnation av ekohus med fokus på hållbarhet och praktiska byggkunskaper."
+      }
+    ]
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "education": [
+      {
+        "program": "Fullstack-utveckling",
+        "institution": "Chas Academy",
+        "location": "Stockholm",
+        "start_date": "Sep 2024",
+        "end_date": "Pågående",
+        "description": "Studerar frontend- och backend-programmering med fokus på systemutveckling."
+      },
+      {
+        "program": "Fordon och Transport",
+        "institution": "Jämtlands Gymnasium",
+        "location": "Åre",
+        "start_date": "Aug 2018",
+        "end_date": "Jun 2020",
+        "description": "Fokus på fordonsunderhåll och teknik."
+      }
+    ]
+  }
+  
+  
