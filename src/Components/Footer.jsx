@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer>
         <div className="footer_links">
           <a
@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
