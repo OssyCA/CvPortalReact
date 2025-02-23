@@ -10,7 +10,7 @@ import EasterEgg1337 from "./Components/EasterEgg1337";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CvPortalReact">
       <EasterEgg1337 />
       <Navbar />
       <main>
@@ -22,7 +22,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-
       <Footer />
     </Router>
   );
