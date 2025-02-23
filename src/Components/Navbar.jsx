@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -28,19 +28,19 @@ export default function Navbar() {
       <nav className={isNavOpen ? "open" : ""}>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <NavLink to="/cv">CV</NavLink>
+            <Link to="/cv">CV</Link>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
