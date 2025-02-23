@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header>
       <h1>
-        <a className="headerEasterEgg" href="/">
+        <a className="headerEasterEgg" href="/CvPortalReact/">
           {" "}
           {/* goes back to home */}
           Ossy{" "}
