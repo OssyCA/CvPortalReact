@@ -245,12 +245,10 @@ progress {
   transition: ease-in-out 0.3s;
 }
 
-
-.projects img {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
+#loadingP {
+  font-size: 3.5em;
 }
+
 
 .popupBtn {
   padding: 0.3em 0.6em; 
@@ -484,7 +482,10 @@ button:active {
 
   .snowflake {
     font-size: 0.3em !important; 
-}
+  }
+  #loadingP{
+  font-size: 2em;
+  }
 
 }
 

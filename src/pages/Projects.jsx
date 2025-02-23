@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [popUp, setpopUp] = useState({});
+  const [popUp, setPopUp] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -14,6 +15,10 @@ const Projects = () => {
         setProjects(data);
       } catch (error) {
         console.error(error);
+      } finally {
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 3000);
       }
     };
 
@@ -28,24 +33,23 @@ const Projects = () => {
   }
 
   const togglePopUp = (index) => {
-    setpopUp((prevState) => ({
-      // prevState is the previous state of the popUp state
+    setPopUp((prevState) => ({
       ...prevState,
-      [index]: !prevState[index], // Toggles the value of the index
+      [index]: !prevState[index],
     }));
   };
 
   return (
-    <>
-      <section className="projects" id="projects">
-        <h2>Projects</h2>
-        {projects.map((project, index) => (
+    <section className="projects" id="projects">
+      <h2>Projects</h2>
+      {isLoading ? (
+        <p id="loadingP">Loading projects...</p>
+      ) : (
+        projects.map((project, index) => (
           <div key={index}>
             <h3>{project.name}</h3>
             <p>Language: {project.language}</p>
             <button className="popupBtn" onClick={() => togglePopUp(index)}>
-              {" "}
-              {/* Toggles the popUp state */}
               Read more
             </button>
             <a
@@ -55,7 +59,6 @@ const Projects = () => {
             >
               Github link
             </a>
-
             {popUp[index] && (
               <div className="popUpOpen">
                 <p>{ifNull(project.description)}</p>
@@ -65,9 +68,9 @@ const Projects = () => {
               </div>
             )}
           </div>
-        ))}
-      </section>
-    </>
+        ))
+      )}
+    </section>
   );
 };
 
