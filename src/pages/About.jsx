@@ -10,11 +10,10 @@ export default function About() {
         <img src="vikingAvatar.webp" alt="vikingLogo" />
         <div className="about_me_text">
           <p>
-            I am a Swedish full-stack .NET developer with experience in building
-            robust, user-friendly applications. I specialize in delivering
-            end-to-end solutions, combining clean code with seamless user
-            experiences. My passion for problem-solving and continuous learning
-            ensures innovative results in every project.
+            I am a Swedish full-stack .NET developer student at Chas Academy. In
+            our education, we learn to work with HTML, CSS, JavaScript, C#, SQL
+            Server and React. I have a passion for programming and I am always
+            eager to learn new things.
           </p>
 
           <button id="contactBtn" onClick={() => navigate("/contact")}>
