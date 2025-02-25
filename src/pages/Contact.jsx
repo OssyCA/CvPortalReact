@@ -2,13 +2,14 @@ import React from "react";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
+  const accessKey = import.meta.env.VITE_ACCESS_KEY;
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "09a0d83d-44c4-45b0-8faa-82c9fc1b3f8f");
+    formData.append("access_key", accessKey);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
