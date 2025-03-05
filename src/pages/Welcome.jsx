@@ -8,6 +8,10 @@ const Welcome = () => {
     <>
       <SnowEffect />
       <h1 className="welcomeHeader">Welcome</h1>
+      <p className="description">
+        {" "}
+        Fullstack .NET Student in search of an exciting internship.
+      </p>
 
       <button id="discBtn" onClick={() => navigate("/about")}>
         Discover me
